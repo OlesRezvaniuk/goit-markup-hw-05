@@ -600,8 +600,6 @@ background-color: var(--white-text-color);
 }
 
 .clients-list .item {
-
-    outline: 1px solid #AFB1B8;
     border-radius: 4px;
 }
 
@@ -611,6 +609,7 @@ background-color: var(--white-text-color);
     justify-content: center;
     width: 170px;
     height: 92px;
+    border: 1px solid #AFB1B8;
     color: #AFB1B8;
     border-radius: 4px;
     transition-duration: 250ms;
@@ -620,7 +619,7 @@ background-color: var(--white-text-color);
 .clients-link:hover,
 .clients-link:focus {
     color: var(--action-text-color);
-    outline: 1px solid var(--action-text-color);
+    border: 1px solid var(--action-text-color);
     border-radius: 4px;
 }
 

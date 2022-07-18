@@ -12,6 +12,7 @@
     --footer-text-color: rgba(255, 255, 255, 0.6);
     --community-bg-color: #F5F4FA;
     --background-color: #2F303A;
+    --icon-color: #AFB1B8;
 }
 
 
@@ -424,13 +425,14 @@ background-color: var(--white-text-color);
     height: 44px;
     align-items: center;
     justify-content: center;
-    color: currentColor;
+    color: var(--icon-color);
     border-radius: 50%;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-link:hover {
+.social-link:hover,
+.social-link:focus {
     background-color: var(--action-text-color);
     border-radius: 50%;
     color: var(--white-text-color);
@@ -536,12 +538,14 @@ background-color: var(--white-text-color);
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.example-list .item:hover .overlay-title {
+.example-list .item:hover .overlay-title,
+.example-list .item:focus .overlay-title {
     opacity: 1;
     transform: translateY(0);
 }
 
-.example-list .item:hover {
+.example-list .item:hover,
+.example-list .item:focus {
     outline: 1px solid #EEEEEE;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -607,14 +611,17 @@ background-color: var(--white-text-color);
     justify-content: center;
     width: 170px;
     height: 92px;
-    color: currentColor;
+    color: #AFB1B8;
+    border-radius: 4px;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-list .item:hover {
+.clients-link:hover,
+.clients-link:focus {
     color: var(--action-text-color);
     outline: 1px solid var(--action-text-color);
+    border-radius: 4px;
 }
 
 .clients-list .item+.item {
